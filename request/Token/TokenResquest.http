@@ -1,0 +1,18 @@
+GET http://localhost:3333/
+
+###
+
+POST http://localhost:3333/store
+
+###
+
+GET http://localhost:3333/show/1
+
+###
+
+PUT http://localhost:3333/update/1
+
+###
+
+DELETE http://localhost:3333/delete/1
+

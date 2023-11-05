@@ -1,6 +1,6 @@
-import dotenv from 'dotenv';
+// eslint-disable-next-line
 import app from './app';
-dotenv.config();
+// eslint-disable-next-line
 
 app.listen(process.env.PORT, () => {
   console.log(`acess http://localhost:${process.env.PORT}`);

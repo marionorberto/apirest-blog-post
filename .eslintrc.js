@@ -22,9 +22,11 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'no-param-reassign': 'off',
     'class-methods-use-this': 'off',
     'import/no-extraneous-dependencies': 'off',
     'import/newline-after-import': 'off',
     'no-console': 'off',
+    'import/first': 'off',
   },
 };

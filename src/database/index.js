@@ -1,8 +1,8 @@
 import Sequelize from 'sequelize';
 import databaseConfig from '../config/database';
+import User from '../models/User';
 
-const database = new Sequelize(databaseConfig);
+const models = [User];
+const databaseConnection = new Sequelize(databaseConfig);
 
-const models = [];
-
-models.forEach((model) => model.connection(database));
+models.forEach((model) => model.init(databaseConnection));

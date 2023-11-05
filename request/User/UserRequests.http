@@ -1,0 +1,17 @@
+
+
+GET http://localhost:3330/user/index
+
+###
+
+POST http://localhost:3330/user/store
+
+###
+GET http://localhost:3330/user/show/1
+
+###
+PUT http://localhost:3330/user/update/1
+
+###
+DELETE http://localhost:3330/user/delete/1
+
