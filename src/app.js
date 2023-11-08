@@ -5,9 +5,12 @@ import './database';
 import express from 'express';
 import homeRoutes from './routes/homeRoutes';
 import tokenRoutes from './routes/tokenRoutes';
-import postRoutes from './routes/postRoutes';
 import userRoutes from './routes/userRoutes';
-import commentRoutes from './routes/commentRoutes';
+import restritionRoutes from './routes/restritionRoutes';
+import fellingRoutes from './routes/fellingRoutes';
+import locationRoutes from './routes/locationRoutes';
+// import postRoutes from './routes/postRoutes';
+// import commentRoutes from './routes/commentRoutes';
 
 class App {
   constructor() {
@@ -20,8 +23,10 @@ class App {
     this.app.use(homeRoutes);
     this.app.use(userRoutes);
     this.app.use(tokenRoutes);
-    this.app.use(postRoutes);
-    this.app.use(commentRoutes);
+    this.app.use(restritionRoutes);
+    this.app.use(fellingRoutes);
+    this.app.use(locationRoutes);
+    // this.app.use(commentRoutes);
   }
 
   middlewares() {
